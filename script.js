@@ -1,3 +1,5 @@
+let myTeam = document.getElementById('my-team');
+
 fighters = [{
         id: 0,
         name: 'Smart and ripped monkey',
@@ -6,8 +8,12 @@ fighters = [{
             //Write a function that adds your fighter to your list 
             //both in innerHTML and the empty list here
             console.log('first fighter ready');
-            yourFighters.push(fighters[0]);
+            yourFighters.push(fighters[this.id]);
             console.log(yourFighters);
+
+            myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
+
+
         }
     },
     {
@@ -17,7 +23,11 @@ fighters = [{
         addFighter: function() {
             //Write a function that adds your fighter to your list 
             //both in innerHTML and the empty list here
+            console.log('first fighter ready');
+            yourFighters.push(fighters[this.id]);
+            console.log(yourFighters);
 
+            myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
     {
@@ -27,7 +37,11 @@ fighters = [{
         addFighter: function() {
             //Write a function that adds your fighter to your list 
             //both in innerHTML and the empty list here
+            console.log('first fighter ready');
+            yourFighters.push(fighters[this.id]);
+            console.log(yourFighters);
 
+            myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
     {
@@ -37,7 +51,11 @@ fighters = [{
         addFighter: function() {
             //Write a function that adds your fighter to your list 
             //both in innerHTML and the empty list here
+            console.log('first fighter ready');
+            yourFighters.push(fighters[this.id]);
+            console.log(yourFighters);
 
+            myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
     {
@@ -47,7 +65,11 @@ fighters = [{
         addFighter: function() {
             //Write a function that adds your fighter to your list 
             //both in innerHTML and the empty list here
+            console.log('first fighter ready');
+            yourFighters.push(fighters[this.id]);
+            console.log(yourFighters);
 
+            myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
     {
@@ -57,7 +79,11 @@ fighters = [{
         addFighter: function() {
             //Write a function that adds your fighter to your list 
             //both in innerHTML and the empty list here
+            console.log('first fighter ready');
+            yourFighters.push(fighters[this.id]);
+            console.log(yourFighters);
 
+            myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
     {
@@ -67,7 +93,11 @@ fighters = [{
         addFighter: function() {
             //Write a function that adds your fighter to your list 
             //both in innerHTML and the empty list here
+            console.log('first fighter ready');
+            yourFighters.push(fighters[this.id]);
+            console.log(yourFighters);
 
+            myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
     {
@@ -77,7 +107,11 @@ fighters = [{
         addFighter: function() {
             //Write a function that adds your fighter to your list 
             //both in innerHTML and the empty list here
+            console.log('first fighter ready');
+            yourFighters.push(fighters[this.id]);
+            console.log(yourFighters);
 
+            myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
 ]
@@ -98,6 +132,8 @@ let addEvent = function() {
         document.getElementById(`spook${i}`).addEventListener('click', () => {
             //Call the fighters object-model
             fighters[i].addFighter();
+            let element = document.getElementById(`spook${i}`);
+            element.remove();
         })
     }
 };
