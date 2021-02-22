@@ -5,7 +5,9 @@ fighters = [{
         addFighter: function() {
             //Write a function that adds your fighter to your list 
             //both in innerHTML and the empty list here
-
+            console.log('first fighter ready');
+            yourFighters.push(fighters[0]);
+            console.log(yourFighters);
         }
     },
     {
@@ -83,10 +85,24 @@ fighters = [{
 let yourFighters = [];
 
 //Part 1
-//Create an eventlistener to fighter buttons
+
 //Call the fighters object-model
+let spookList = document.getElementById('spook-list');
+let listItem = document.getElementsByTagName('li');
 
 
+let addEvent = function() {
+    for (let i = 0; i < listItem.length; i++) {
+        //Create an eventlistener to fighter buttons
+        console.log(i);
+        document.getElementById(`spook${i}`).addEventListener('click', () => {
+            //Call the fighters object-model
+            fighters[i].addFighter();
+        })
+    }
+};
+
+addEvent();
 
 //Part 2
 //Write object methods
