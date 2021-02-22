@@ -10,10 +10,7 @@ fighters = [{
             console.log('first fighter ready');
             yourFighters.push(fighters[this.id]);
             console.log(yourFighters);
-
             myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
-
-
         }
     },
     {
@@ -26,7 +23,6 @@ fighters = [{
             console.log('first fighter ready');
             yourFighters.push(fighters[this.id]);
             console.log(yourFighters);
-
             myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
@@ -40,7 +36,6 @@ fighters = [{
             console.log('first fighter ready');
             yourFighters.push(fighters[this.id]);
             console.log(yourFighters);
-
             myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
@@ -54,7 +49,6 @@ fighters = [{
             console.log('first fighter ready');
             yourFighters.push(fighters[this.id]);
             console.log(yourFighters);
-
             myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
@@ -68,7 +62,6 @@ fighters = [{
             console.log('first fighter ready');
             yourFighters.push(fighters[this.id]);
             console.log(yourFighters);
-
             myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
@@ -82,7 +75,6 @@ fighters = [{
             console.log('first fighter ready');
             yourFighters.push(fighters[this.id]);
             console.log(yourFighters);
-
             myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
@@ -96,7 +88,6 @@ fighters = [{
             console.log('first fighter ready');
             yourFighters.push(fighters[this.id]);
             console.log(yourFighters);
-
             myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
@@ -110,7 +101,6 @@ fighters = [{
             console.log('first fighter ready');
             yourFighters.push(fighters[this.id]);
             console.log(yourFighters);
-
             myTeam.innerHTML += `<li id="spook${this.id}"> ${this.name}</li>`
         }
     },
