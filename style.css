@@ -16,7 +16,7 @@ body {
     width: 100%;
     height: 100vh;
     padding-top: 26vh;
-    background-image: url("halloween.jpg");
+    background-color: #fe8232;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
